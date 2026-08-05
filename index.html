@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>小児科外来ノート — 症候別の対応と鑑別</title>
+<meta name="description" content="小児科外来でよく出会う症候ごとに、検査・所見・保護者説明・処方・紹介基準をガイドラインの出典つきでまとめた学習用ノート。">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <b>小児科外来ノート</b>
+      <span>SYMPTOM → WORKUP → EXPLAIN → REFER</span>
+    </div>
+
+    <div class="wt">
+      <label for="weight">体重</label>
+      <input id="weight" type="number" inputmode="decimal" step="0.1" min="0" max="120" placeholder="—">
+      <em>kg</em>
+      <button id="wclear" type="button" title="消す">×</button>
+    </div>
+
+    <div class="search">
+      <input id="q" type="search" placeholder="症状・疾患名で検索（例：紫斑）" autocomplete="off">
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <aside class="rail"><nav id="rail"></nav></aside>
+  <main></main>
+</div>
+
+<footer>
+  学習用の個人ノートです。診療上の判断は必ず最新のガイドライン原文と添付文書に基づいて行ってください。患者さんの個人情報は入力しないでください（体重はこの端末のブラウザ内にのみ保存されます）。
+</footer>
+
+<script src="data/references.js"></script>
+<script src="data/drugs.js"></script>
+<script src="data/symptoms.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
